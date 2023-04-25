@@ -167,7 +167,7 @@ li i:hover {
 
 /* Value Prop Header section */
 #value-prop-header {
-  background-image: url("city.png");
+  background-image: url("../city.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
