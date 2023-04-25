@@ -18,6 +18,10 @@ module.exports = {
       stream: false,
       crypto: false,
       async_hooks: false,
+      buffer: require.resolve("buffer/"),
+      querystring: require.resolve("querystring-es3/"),
+      url: require.resolve("url/"),
+      util: require.resolve("util/"),
       "crypto-browserify": require.resolve("crypto-browserify"), //if you want to use this module also don't forget npm i crypto-browserify
     },
   },
