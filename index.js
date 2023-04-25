@@ -1,47 +1,37 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 require("dotenv").config();
-var session = require("express-session");
-var path = require("path");
 
-app.use(express.static(__dirname));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "dist")));
-app.use(express.static(path.resolve(__dirname, "dist")));
-// app.use(
-//   session({
-//     secret: process.env.SESSION_SECRET,
-//     resave: false,
-//     saveUninitialized: true,
-//   })
-// );
-app.set("src", path.join(__dirname, "src"));
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 // Route for the base URL
-app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/src/index.html");
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
 // Route for the /services URL
-app.get("/services", function (req, res) {
-  res.sendFile(__dirname + "/src/services.html");
+app.get("/services", (req, res) => {
+  res.render("services");
 });
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  next(createError(404));
+app.use((req, res, next) => {
+  const error = new Error("Not Found");
+  error.status = 404;
+  next(error);
 });
 
-app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
-
-  // render the error page
+app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render("error", {
     title: `🎊 ${err.status || 500} Error`,
+    message: err.message,
+    error: req.app.get("env") === "development" ? err : {},
   });
 });
 
