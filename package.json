@@ -45,7 +45,6 @@
     "fill-range": "^7.0.1",
     "fraction.js": "^4.2.0",
     "fs.realpath": "^1.0.0",
-    "fsevents": "^2.3.2",
     "function-bind": "^1.1.1",
     "glob": "^7.1.6",
     "glob-parent": "^6.0.2",
