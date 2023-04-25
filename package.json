@@ -6,7 +6,7 @@
     "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "node ./bin/www.js"
   },
   "author": "",
   "license": "ISC",
