@@ -18,6 +18,7 @@ module.exports = {
       stream: false,
       crypto: false,
       async_hooks: false,
+      os: require.resolve("os-browserify/browser"),
       buffer: require.resolve("buffer/"),
       querystring: require.resolve("querystring-es3/"),
       url: require.resolve("url/"),
