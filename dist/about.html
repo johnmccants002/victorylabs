@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS"
+      rel=" stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
+            <a class="text-gray-800 hover:text-gray-700" href="#"
+              >Victory Labs</a
+            >
+          </div>
+          <div class="flex items-center -mx-2">
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">Home</a>
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Services</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Portfolio</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">Blog</a>
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          How We Work
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/3 p-6">
+            <h3 class="text-xl font-bold mb-4">1. Initial Consultation</h3>
+            <p class="mb-6">
+              We'll start with an initial consultation to get to know your
+              business, your goals, and your challenges. We'll discuss your
+              project requirements, timeline, and budget to ensure that we can
+              meet your needs.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 p-6">
+            <h3 class="text-xl font-bold mb-4">2. Research</h3>
+            <p class="mb-6">
+              Once we have a clear understanding of your project requirements,
+              we'll conduct research to learn about your customers, your
+              competition, and your industry. This research will help us develop
+              a custom software development strategy that aligns with your
+              business goals.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 p-6">
+            <h3 class="text-xl font-bold mb-4">3. Proposal</h3>
+            <p class="mb-6">
+              Based on our research and initial consultation, we'll create a
+              proposal that outlines the scope of the project, the timeline, the
+              deliverables, and the budget. We'll review the proposal with you
+              to ensure that it meets your needs and expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="container mx-auto px-6 py-20">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 p-6">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              Design and Development
+            </h3>
+            <p class="mb-6">
+              Once the proposal is approved, we'll move on to planning the
+              design and development process. We'll create a detailed project
+              plan that outlines the tasks, timelines, and milestones for each
+              phase of the project.
+            </p>
+            <p class="mb-6">
+              The design process begins with creating wireframes of the user
+              interface. This helps us plan the layout and user flow of the
+              software.
+            </p>
+            <p class="mb-6">
+              After wireframes are approved, we'll create high-fidelity mockups
+              of the software's user interface. These mockups will provide a
+              detailed look at the final design.
+            </p>
+            <p class="mb-6">
+              Once the mockups are approved, we'll begin the development
+              process. Our team of experienced developers will use modern tools
+              and technologies to build the software solution.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 p-6">
+            <img
+              src="https://via.placeholder.com/600x400.png?text=Design+and+Development"
+              alt="Design and Development"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 p-6">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              Launch and Maintenance
+            </h3>
+            <p class="mb-6">
+              Once development is complete, we'll test the software to ensure
+              that it's bug-free and performs as expected. We'll work with you
+              to identify any issues and make any necessary changes.
+            </p>
+            <p class="mb-6">
+              After testing is complete and any issues have been resolved, we'll
+              deploy the software to production. We'll work with you to ensure a
+              smooth launch and transition to using the software.
+            </p>
+            <p class="mb-6">
+              Once the software is live, we'll provide ongoing support and
+              maintenance to ensure that it's always up-to-date and performing
+              at its best. We'll provide training and resources to help you and
+              your team get the most out of the software.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 p-6">
+            <img
+              src="https://via.placeholder.com/600x400.png?text=Launch+and+Maintenance"
+              alt="Launch and Maintenance"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full sm:w-1/2 px-6">
+            <div class="text-white">
+              <h3 class="font-bold text-xl mb-2">Victory Labs</h3>
+              <p class="mb-2">
+                Victory Labs is a software development company that specializes
+                in creating custom solutions for businesses.
+              </p>
+              <p>
+                <a href="#" class="hover:underline">Learn More</a>
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Links</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Twitter</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="h-px my-6 bg-gray-700 border-none" />
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <p class="text-center md:text-left text-white">
+              © 2023 Victory Labs. All rights reserved.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <a href="#" class="text-white hover:underline mx-4"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-white hover:underline">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const toggleButton = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    toggleButton.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</html>

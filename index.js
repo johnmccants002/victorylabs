@@ -8,6 +8,7 @@ app.use(express.static(__dirname));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.resolve(__dirname, "dist")));
 // app.use(
 //   session({
 //     secret: process.env.SESSION_SECRET,
