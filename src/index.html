@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d5c7ec7fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS"
+      rel=" stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
+            <a class="text-gray-800 hover:text-gray-700" href="#"
+              >Victory Labs</a
+            >
+          </div>
+          <div class="flex items-center -mx-2">
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="/">Home</a>
+            <a href="/services" class="mx-2 text-gray-600 hover:text-gray-800"
+              >Services</a
+            >
+
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Portfolio</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="blogs.html"
+              >Blog</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="value-prop-header">
+      <div class="main-container">
+        <h1>Victory Labs</h1>
+        <h2>Your Partner in Software Development</h2>
+        <a href="#plans" class="btn">Get Started</a>
+      </div>
+    </section>
+    <!-- <header class="bg-white">
+      <div class="container mx-auto px-6 py-16">
+        <div class="items-center lg:flex">
+          <div class="lg:w-1/2">
+            <h2
+              class="text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl xl:text-6xl"
+            >
+              Transform Your Business with Custom Software
+            </h2>
+            <p class="mt-4 text-gray-600 md:text-xl lg:text-2xl">
+              We help you create software solutions that solve problems and
+              drive growth. Get in touch with us today to learn more.
+            </p>
+            <div class="mt-8">
+              <a class="btn btn-primary" href="#">Get Started</a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 lg:ml-auto mx-20">
+            <img class="hidden lg:block" src="../city.png" alt="Victory Labs" />
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          About Victory Labs
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3">Who we are</h3>
+            <p class="text-gray-600 leading-loose">
+              Victory Labs is a software development company that creates custom
+              software solutions for businesses of all sizes. We specialize in
+              solving complex problems with technology, and helping our clients
+              achieve their goals.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3">What we do</h3>
+            <p class="text-gray-600 leading-loose">
+              Our team of experienced developers, designers, and project
+              managers work together to build software that drives growth,
+              solves problems, and improves efficiency. We take a collaborative
+              approach with our clients to ensure that their needs are met at
+              every step of the development process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="bg-white-100 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">Technologies Used</h2>
+        <ul class="flex flex-wrap justify-center items-center tech-list">
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-html5 fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">HTML5</span>
+          </li>
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-css3-alt fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">CSS3</span>
+          </li>
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-square-js fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">JavaScript</span>
+          </li>
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-react fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">React</span>
+          </li>
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-swift fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">Swift</span>
+          </li>
+          <li class="mx-10 my-6 flex flex-col items-center">
+            <i class="fab fa-node fa-4x mb-4" style="color: #b89c6e"></i>
+            <span class="text-center">Node</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          Our Work
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/3 p-6">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <a href="#">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="../japanesemobile.png"
+                  alt="Site 1"
+                />
+              </a>
+              <div class="p-6">
+                <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Japanese Mobile App
+                </h3>
+                <p class="leading-relaxed mb-3">
+                  Japan's leading mobile app for train schedules and route
+                  planning, HyperDia is the go-to solution for locals and
+                  tourists alike. With real-time updates, fare information, and
+                  even wheelchair accessibility details, HyperDia provides
+                  comprehensive and reliable transportation information for
+                  navigating Japan's complex train system.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center" href="#"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 p-6">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <a href="#">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="../folk.png"
+                  alt="Site 2"
+                />
+              </a>
+              <div class="p-6">
+                <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Artesanías Mexicanas: Exploring the Rich Traditions of Mexican
+                  Folk Art
+                </h3>
+                <p class="leading-relaxed mb-3">
+                  Immerse yourself in the rich culture and vibrant colors of
+                  Mexican folk art with our website. Our collection features a
+                  wide range of traditional crafts, from intricately designed
+                  pottery and textiles to colorful paper mache sculptures and
+                  vibrant hand-carved wooden masks. Discover the history and
+                  meaning behind each piece and explore the diverse styles and
+                  techniques used by artisans throughout Mexico.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center" href="#"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 p-6">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <a href="#">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="../mgs.png"
+                  alt="Site 3"
+                />
+              </a>
+              <div class="p-6">
+                <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Metal Gear Fandom
+                </h3>
+                <p class="leading-relaxed mb-3">
+                  Join the community of Metal Gear Solid fans and immerse
+                  yourself in the thrilling world of espionage, action, and
+                  stealth. Our fan page is dedicated to all things Metal Gear
+                  Solid, from in-depth analysis of the games' intricate
+                  plotlines and characters, to discussions about the latest news
+                  and rumors surrounding the beloved franchise. Connect with
+                  like-minded fans and share your love for one of the most
+                  iconic and influential video game series of all time.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center" href="#"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          Choose Your Plan
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/3 px-6 mb-4">
+            <div
+              class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative"
+            >
+              <h3 class="text-gray-900 font-bold text-xl mb-3">Basic</h3>
+              <div class="text-gray-600 font-bold text-5xl mb-2">
+                $19<span class="text-gray-500 text-base">/mo</span>
+              </div>
+              <p class="text-gray-500 mb-5">Up to 5 projects</p>
+              <a
+                class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                href="#"
+                >Select Plan</a
+              >
+              <div
+                class="absolute bottom-0 right-0 bg-red-500 px-3 py-2 mr-4 text-xs font-bold rounded-full text-white"
+              >
+                Most Popular
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-6 mb-4">
+            <div
+              class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative"
+            >
+              <h3 class="text-gray-900 font-bold text-xl mb-3">Pro</h3>
+              <div class="text-gray-600 font-bold text-5xl mb-2">
+                $39<span class="text-gray-500 text-base">/mo</span>
+              </div>
+              <p class="text-gray-500 mb-5">Up to 20 projects</p>
+              <a
+                class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                href="#"
+                >Select Plan</a
+              >
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-6 mb-4">
+            <div
+              class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative"
+            >
+              <h3 class="text-gray-900 font-bold text-xl mb-3">Enterprise</h3>
+              <div class="text-gray-600 font-bold text-5xl mb-2">
+                $99<span class="text-gray-500 text-base">/mo</span>
+              </div>
+              <p class="text-gray-500 mb-5">Unlimited projects</p>
+              <a
+                class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                href="#"
+                >Select Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          Contact Us
+        </h2>
+        <div class="w-full max-w-2xl mx-auto">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2" for="name">
+                Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2" for="email">
+                Email
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="johndoe@example.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2" for="message">
+                Message
+              </label>
+              <textarea
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <div class="mb-4">
+              <button
+                class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full sm:w-1/2 px-6">
+            <div class="text-white">
+              <h3 class="font-bold text-xl mb-2">Victory Labs</h3>
+              <p class="mb-2">
+                Victory Labs is a software development company that specializes
+                in creating custom solutions for businesses.
+              </p>
+              <p>
+                <a href="#" class="hover:underline">Learn More</a>
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Links</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="faq.html" class="text-white hover:underline">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Twitter</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="h-px my-6 bg-gray-700 border-none" />
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <p class="text-center md:text-left text-white">
+              © 2023 Victory Labs. All rights reserved.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <a href="#" class="text-white hover:underline mx-4"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-white hover:underline">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const toggleButton = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    toggleButton.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</html>

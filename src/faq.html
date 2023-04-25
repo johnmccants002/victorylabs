@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d5c7ec7fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS"
+      rel=" stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
+            <a class="text-gray-800 hover:text-gray-700" href="#"
+              >Victory Labs</a
+            >
+          </div>
+          <div class="flex items-center -mx-2">
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">Home</a>
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Services</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Portfolio</a
+            >
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">Blog</a>
+            <a class="mx-2 text-gray-600 hover:text-gray-800" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-gray-100 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          Frequently Asked Questions
+        </h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-title">
+              What programming languages do you work with?
+            </h3>
+            <div class="accordion-content">
+              <p>
+                We specialize in working with popular programming languages like
+                JavaScript, Python, Ruby, Java, and C#.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">
+              What is your development process like?
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Our development process is highly collaborative and involves
+                regular communication with our clients to ensure that we're
+                building the software solution that best meets their needs.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">
+              How long does it take to develop a custom software solution?
+            </h3>
+            <div class="accordion-content">
+              <p>
+                The time it takes to develop a custom software solution depends
+                on a variety of factors, including the complexity of the
+                project, the size of the development team, and the availability
+                of resources.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">What is your pricing model?</h3>
+            <div class="accordion-content">
+              <p>
+                We offer flexible pricing models depending on the needs of our
+                clients, including hourly rates, fixed-price contracts, and
+                ongoing support and maintenance agreements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full sm:w-1/2 px-6">
+            <div class="text-white">
+              <h3 class="font-bold text-xl mb-2">Victory Labs</h3>
+              <p class="mb-2">
+                Victory Labs is a software development company that specializes
+                in creating custom solutions for businesses.
+              </p>
+              <p>
+                <a href="#" class="hover:underline">Learn More</a>
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Links</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full sm:w-1/4 px-6">
+            <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
+            <ul class="list-reset mb-2">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Twitter</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="text-white hover:underline">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="h-px my-6 bg-gray-700 border-none" />
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <p class="text-center md:text-left text-white">
+              © 2023 Victory Labs. All rights reserved.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <a href="#" class="text-white hover:underline mx-4"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-white hover:underline">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const toggleButton = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    toggleButton.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+    // Get all accordion items
+    const items = document.querySelectorAll(".accordion-item");
+
+    // Add click event listener to each item
+    items.forEach((item) => {
+      const title = item.querySelector(".accordion-title");
+      title.addEventListener("click", () => {
+        // Toggle the active class on the clicked item
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+</html>
